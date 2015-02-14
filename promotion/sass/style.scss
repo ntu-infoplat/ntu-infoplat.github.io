@@ -57,7 +57,7 @@ $pattern-background-size: 25em;
 		font-weight: 300;	
 		line-height: 1.75em;
 		margin-bottom: 1em;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		
 		a {
 			color: inherit;
@@ -500,7 +500,7 @@ $pattern-background-size: 25em;
 		line-height: 3.75em;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 
 		&:hover {
 			background: rgba(188,202,206,0.15);
@@ -611,7 +611,7 @@ $pattern-background-size: 25em;
 			letter-spacing: 0.075em;
 			position: absolute;
 			right: 1.5em;
-			text-transform: uppercase;
+			// text-transform: uppercase;
 			top: 0.75em;
 			
 			ul {
@@ -707,7 +707,7 @@ $pattern-background-size: 25em;
 		line-height: 2.25em;
 		min-width: 13em;
 		padding: 1em 0;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		margin-top: calc(-1em + 1px);
 
 		&.level-0 {
@@ -796,14 +796,14 @@ $pattern-background-size: 25em;
 					margin: 0;
 					padding-left: 0.05em;
 					position: relative;
-					text-transform: uppercase;
+					// text-transform: uppercase;
 				}
 			}
 			
 			p {
 				letter-spacing: 0.1em;
 				margin: 0;
-				text-transform: uppercase;
+				// text-transform: uppercase;
 				
 				a {
 					color: inherit;
@@ -982,7 +982,7 @@ $pattern-background-size: 25em;
 		color: $color-navPanel-fg;
 		font-size: 0.8em;
 		letter-spacing: 0.075em;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 
 		nav {
 			padding: 0.25em 0.5em 1em 0.5em;

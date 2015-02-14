@@ -63,7 +63,6 @@
 		font-weight: 300;
 		line-height: 1.75em;
 		margin-bottom: 1em;
-		text-transform: uppercase;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -516,7 +515,6 @@
 		line-height: 3.75em;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
 	}
 
 		input[type="button"]:hover,
@@ -640,7 +638,6 @@
 			letter-spacing: 0.075em;
 			position: absolute;
 			right: 1.5em;
-			text-transform: uppercase;
 			top: 0.75em;
 		}
 
@@ -736,7 +733,6 @@
 		line-height: 2.25em;
 		min-width: 13em;
 		padding: 1em 0;
-		text-transform: uppercase;
 		margin-top: calc(-1em + 1px);
 	}
 
@@ -837,13 +833,11 @@
 					margin: 0;
 					padding-left: 0.05em;
 					position: relative;
-					text-transform: uppercase;
 				}
 
 			#banner .inner p {
 				letter-spacing: 0.1em;
 				margin: 0;
-				text-transform: uppercase;
 			}
 
 				#banner .inner p a {
@@ -1030,7 +1024,6 @@
 		color: white;
 		font-size: 0.8em;
 		letter-spacing: 0.075em;
-		text-transform: uppercase;
 	}
 
 		#topPanel nav,
