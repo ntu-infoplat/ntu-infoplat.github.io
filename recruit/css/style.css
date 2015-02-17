@@ -6,6 +6,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 /* Basic */
+.site-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 1500ms linear;
+  opacity: 0; }
+  .site-bg.front {
+    opacity: 1; }
+
 body, #skel-layers-wrapper {
   background: #f3f6fa;
   z-index: -10; }
@@ -643,24 +655,13 @@ input[type="reset"],
   padding: 6em 0;
   text-align: center;
   position: relative; }
-  #banner .bg {
-    content: "";
+  #banner .site-bg {
     background-attachment: scroll, scroll, scroll, fixed;
     background-color: #645862;
     background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
     background-position: bottom left, bottom right, top left, top center;
     background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-    background-size: 25em, 25em, auto, cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: opacity 300ms linear;
-    opacity: 0; }
-    #banner .bg.front {
-      opacity: 1; }
+    background-size: 25em, 25em, auto, cover; }
   #banner .inner {
     -moz-animation: reveal-banner 1s 0.25s ease-in-out;
     -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -730,24 +731,13 @@ body.index #main {
   padding: 5em;
   text-align: center;
   position: relative; }
-  #cta .bg {
-    content: "";
+  #cta .site-bg {
     background-attachment: scroll, scroll, scroll, fixed;
     background-color: #645862;
     background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
     background-position: top left, top right, top left, bottom center;
     background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-    background-size: 25em, 25em, auto, cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: opacity 300ms linear;
-    opacity: 0; }
-    #cta .bg.front {
-      opacity: 1; }
+    background-size: 25em, 25em, auto, cover; }
   #cta header {
     margin-bottom: 2em; }
 

@@ -27,8 +27,8 @@ $(function() {
     }
 
     var nextbg = function(element) {
-        var front = element.querySelector(".bg.front");
-        var back = element.querySelector(".bg.back");
+        var front = element.querySelector(".site-bg.front");
+        var back = element.querySelector(".site-bg.back");
         back.style.backgroundImage = "url('css/images/light-bl.svg'), url('css/images/light-br.svg'), url('css/images/overlay.png'), url('" + images[nowIndex] + "')";
         front.classList.toggle('front');
         front.classList.toggle('back');
