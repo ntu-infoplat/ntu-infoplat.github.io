@@ -17,6 +17,7 @@ $pattern-background-size: 25em;
 
 	body, #skel-layers-wrapper {
 		background: $color-bg;
+        z-index: -10;
 	}
 
 		body.is-loading * {
@@ -758,18 +759,41 @@ $pattern-background-size: 25em;
 	@-ms-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 	@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 
+	@-moz-keyframes change-bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-webkit-keyframes change-bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-o-keyframes change-bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@-ms-keyframes change-bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+	@keyframes change-bg { 0% { opacity: 0; } 100% { opacity: 1; } }
+
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: $color-three-bg;
-		background-image: url('images/light-bl.svg'), url('images/light-br.svg'), url('images/overlay.png'), url('../images/banner.jpg');
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
 		color: $color-banner-fg;
 		cursor: default;
 		padding: 6em 0;
 		text-align: center;
+        position: relative;
 		
+        .bg {
+            content: "";
+            background-attachment: scroll, scroll, scroll, fixed;
+            background-color: $color-three-bg;
+            background-image: url('images/light-bl.svg'), url('images/light-br.svg'), url('images/overlay.png'), url('../images/banner.jpg');
+            background-position: bottom left, bottom right, top left, top center;
+            background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+            background-size: $pattern-background-size, $pattern-background-size, auto, cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: opacity 300ms linear;
+
+            opacity: 0;
+            &.front {
+                opacity: 1;
+            }
+        }
+
 		.inner {
 			@include vendor-property('animation', 'reveal-banner 1s 0.25s ease-in-out');
 			@include vendor-property('animation-fill-mode', 'forwards');
@@ -853,16 +877,32 @@ $pattern-background-size: 25em;
 /* CTA */
 
 	#cta {
-		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: $color-three-bg;
-		background-image: url('images/light-tl.svg'), url('images/light-tr.svg'), url('images/overlay.png'), url('../images/banner.jpg');
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
 		color: $color-three-fg;
 		padding: 5em;
 		text-align: center;
+        position: relative;
 		
+        .bg {
+            content: "";
+            background-attachment: scroll, scroll, scroll, fixed;
+            background-color: $color-three-bg;
+            background-image: url('images/light-tl.svg'), url('images/light-tr.svg'), url('images/overlay.png'), url('../images/banner.jpg');
+            background-position: top left, top right, top left, bottom center;
+            background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+            background-size: $pattern-background-size, $pattern-background-size, auto, cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: opacity 300ms linear;
+
+            opacity: 0;
+            &.front {
+                opacity: 1;
+            }
+        }
 		header {
 			margin-bottom: 2em;
 		}
