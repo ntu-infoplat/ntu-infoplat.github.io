@@ -2,7 +2,7 @@
 
 'use strict';
 
-(function() {
+$(function() {
     // element need to be changed background
     var banner = document.querySelector("#banner");
     var cta = document.querySelector("#cta");
@@ -13,10 +13,18 @@
     // count and max
     var MAX = 2;
     var nowIndex = 0;
+
+    // images url
     var images = [
         "images/banner.jpg",
         "images/banner0.jpg"
     ];
+
+    var imgpreload = new Array(images.length);
+    for (var i = 0; i < images.length; i++) {
+        imgpreload[i] = new Image();
+        imgpreload[i].src = images[i];
+    }
 
     var nextbg = function(element) {
         var front = element.querySelector(".bg.front");
@@ -33,4 +41,4 @@
         nextbg(banner);
         nextbg(cta);
     }, tstep);
-})();
+});
