@@ -15,6 +15,21 @@ $pattern-background-size: 25em;
 
 /* Basic */
 
+    .site-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: opacity 1500ms linear;
+
+        opacity: 0;
+        &.front {
+            opacity: 1;
+        }
+    }
+
 	body, #skel-layers-wrapper {
 		background: $color-bg;
         z-index: -10;
@@ -772,26 +787,13 @@ $pattern-background-size: 25em;
 		text-align: center;
         position: relative;
 		
-        .bg {
-            content: "";
+        .site-bg {
             background-attachment: scroll, scroll, scroll, fixed;
             background-color: $color-three-bg;
             background-image: url('images/light-bl.svg'), url('images/light-br.svg'), url('images/overlay.png'), url('../images/banner.jpg');
             background-position: bottom left, bottom right, top left, top center;
             background-repeat: no-repeat, no-repeat, repeat, no-repeat;
             background-size: $pattern-background-size, $pattern-background-size, auto, cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            transition: opacity 300ms linear;
-
-            opacity: 0;
-            &.front {
-                opacity: 1;
-            }
         }
 
 		.inner {
@@ -882,27 +884,15 @@ $pattern-background-size: 25em;
 		text-align: center;
         position: relative;
 		
-        .bg {
-            content: "";
+        .site-bg {
             background-attachment: scroll, scroll, scroll, fixed;
             background-color: $color-three-bg;
             background-image: url('images/light-tl.svg'), url('images/light-tr.svg'), url('images/overlay.png'), url('../images/banner.jpg');
             background-position: top left, top right, top left, bottom center;
             background-repeat: no-repeat, no-repeat, repeat, no-repeat;
             background-size: $pattern-background-size, $pattern-background-size, auto, cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            transition: opacity 300ms linear;
-
-            opacity: 0;
-            &.front {
-                opacity: 1;
-            }
         }
+
 		header {
 			margin-bottom: 2em;
 		}
