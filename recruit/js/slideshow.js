@@ -8,17 +8,19 @@ $(function() {
     var cta = document.querySelector("#cta");
 
     // time step
-    var tstep = 4000;
+    var tstep = 6000;
     
-    // count and max
-    var MAX = 2;
-    var nowIndex = 0;
-
     // images url
     var images = [
-        "images/banner.jpg",
-        "images/banner0.jpg"
+        "images/bg1.png",
+        "images/bg2.png",
+        "images/bg3.png",
+        "images/bg4.png",
     ];
+
+    // count and max
+    var MAX = images.length;
+    var nowIndex = 0;
 
     var imgpreload = new Array(images.length);
     for (var i = 0; i < images.length; i++) {
