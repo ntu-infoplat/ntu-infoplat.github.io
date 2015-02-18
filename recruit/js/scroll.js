@@ -31,9 +31,9 @@ $(function() {
             return rect.top + rect.height - screen.height;
         }
         var b = [
+            150,
             0,
             -150,
-            -300,
         ]
         var progress = 0;
 
