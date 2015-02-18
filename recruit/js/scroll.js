@@ -32,8 +32,8 @@ $(function() {
         }
         var b = [
             0,
-            -175,
-            -350,
+            -150,
+            -300,
         ]
         var progress = 0;
 
