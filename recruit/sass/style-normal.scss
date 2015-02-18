@@ -35,7 +35,7 @@
 	.wrapper {
 		margin-bottom: 4em;
 		padding: 4em 3em;
-		
+
 		&.style4 {
 			padding: 3em;
 		}
@@ -65,9 +65,15 @@
 		padding: 4em;
 		background-attachment: scroll;
 	}
-	
+
 /* Footer */
 
 	#footer {
 		padding: 4em;
+	}
+
+	/* Logo, contains Squirrel */
+
+	#logo h1 {
+		line-height: 2em;
 	}
