@@ -21,7 +21,7 @@ $pattern-background-size: 10em;
 		font-size: 1em;
 		letter-spacing: 0.025em;
 	}
-	
+
 	p {
 		text-align: justify;
 	}
@@ -34,7 +34,7 @@ $pattern-background-size: 10em;
 		&.major {
 			padding-bottom: 0;
 		}
-		
+
 		&.special {
 			margin-bottom: 3em;
 			padding-left: 1.5em;
@@ -44,18 +44,18 @@ $pattern-background-size: 10em;
 			&:after {
 				width: 38%;
 			}
-			
+
 			.icon {
 				font-size: 0.75em;
 				top: 1.5em;
 			}
 		}
-		
+
 		p {
 			text-align: center;
 		}
 	}
-	
+
 	footer {
 		&.major {
 			padding-top: 0;
@@ -78,7 +78,7 @@ $pattern-background-size: 10em;
 	.button {
 		max-width: 20em;
 		width: 100%;
-		
+
 		&.fit {
 			width: auto;
 		}
@@ -90,15 +90,15 @@ $pattern-background-size: 10em;
 		&.icons {
 			li {
 				padding-left: 0.25em;
-			}		
+			}
 		}
-		
+
 		&.featured-icons {
 			li {
 				.icon {
 					width: 1.1em;
 				}
-			}		
+			}
 		}
 
 		&.buttons {
@@ -111,13 +111,7 @@ $pattern-background-size: 10em;
 	.wrapper {
 		margin-bottom: 2.5em;
 		padding: 2.25em 1.5em;
-		
-		&.special {
-			br {
-				display: none;
-			}
-		}
-		
+
 		&.style1 {
 			padding: 0 1.5em;
 		}
@@ -138,7 +132,7 @@ $pattern-background-size: 10em;
 	#banner {
 		background-size: $pattern-background-size, $pattern-background-size, auto, cover;
 		padding: 6em 0;
-		
+
 		.inner {
 			background: none;
 			display: block;
@@ -149,13 +143,9 @@ $pattern-background-size: 10em;
 					font-size: 1.5em;
 				}
 			}
-			
+
 			p {
 				text-align: center;
-			}
-
-			br {
-				display: none;
 			}
 		}
 	}
@@ -166,7 +156,7 @@ $pattern-background-size: 10em;
 		background-size: $pattern-background-size;
 		padding: 3.5em 0 2.5em 0;
 	}
-	
+
 	body.index #main {
 		padding: 2.5em 0 0 0;
 	}

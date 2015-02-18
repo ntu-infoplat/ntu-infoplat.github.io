@@ -17,10 +17,6 @@ $pattern-background-size: 15em;
 /* Section/Article */
 
 	header {
-		br {
-			display: none;
-		}
-
 		&.major {
 			padding-bottom: 1em;
 		}
@@ -42,12 +38,6 @@ $pattern-background-size: 15em;
 	.wrapper {
 		margin-bottom: 3em;
 		padding: 3em 2.5em;
-		
-		&.special {
-			br {
-				display: none;
-			}
-		}
 		
 		&.style1 {
 			padding: 0 2.5em;
