@@ -616,6 +616,8 @@ input[type="reset"],
     left: 0;
     bottom: 0;
     right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
     opacity: 0;
     transition: opacity 200ms linear;
     display: flex;

@@ -779,13 +779,15 @@ $pattern-background-size: 25em;
 
     .hover-display {
         position: relative;
-        
+
         .hover-mask {
             position: absolute;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
+            padding-left: 1em;
+            padding-right: 1em;
             opacity: 0;
             transition: opacity 200ms linear;
             display: flex;
