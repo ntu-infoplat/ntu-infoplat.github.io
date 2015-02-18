@@ -258,8 +258,8 @@ input[type="email"] {
     text-decoration: none;
     top: 0;
     width: 2.25em; }
-    .icon.circle:hover {
-      top: -0.4em; }
+    .icon.circle.jump:hover {
+      top: -0.5em; }
     .icon.circle.fa-twitter {
       background: #70aecd;
       color: #fff; }
@@ -606,6 +606,34 @@ input[type="reset"],
       color: #fff; }
     .dropotron > li:first-child {
       border-top: 0; }
+
+/* Hover Display */
+.hover-display {
+  position: relative; }
+  .hover-display .hover-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 200ms linear;
+    display: flex;
+    align-items: center;
+    margin: 0; }
+  .hover-display:hover .hover-mask {
+    opacity: 1; }
+
+.coop-bg {
+  color: #fefefe;
+  background: radial-gradient(circle at bottom right 25%, rgba(37, 81, 75, 0.8), rgba(52, 33, 33, 0.8)); }
+
+.recruit-bg {
+  padding: 18% 15% 12%;
+  font-size: 16px;
+  border-radius: 50%;
+  color: #fefefe;
+  background: rgba(0, 0, 0, 0.6); }
 
 /* Banner */
 @-moz-keyframes reveal-banner {

@@ -309,8 +309,8 @@ $pattern-background-size: 25em;
 			top: 0;
 			width: 2.25em;
 		
-			&:hover {
-				top: -0.4em;
+			&.jump:hover {
+				top: -0.5em;
 			}
 		
 			&.fa-twitter {
@@ -637,7 +637,6 @@ $pattern-background-size: 25em;
 			letter-spacing: 0.075em;
 			position: absolute;
 			right: 1.5em;
-			// text-transform: uppercase;
 			top: 0.75em;
 			
 			ul {
@@ -733,7 +732,6 @@ $pattern-background-size: 25em;
 		line-height: 2.25em;
 		min-width: 13em;
 		padding: 1em 0;
-		// text-transform: uppercase;
 		margin-top: calc(-1em + 1px);
 
 		&.level-0 {
@@ -775,6 +773,43 @@ $pattern-background-size: 25em;
 			}
 		}
 	}
+
+/* Hover Display */
+
+    .hover-display {
+        position: relative;
+        
+        .hover-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 200ms linear;
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+        }
+
+        &:hover .hover-mask {
+            opacity: 1;
+        }
+    }
+
+    .coop-bg {
+        color: lighten($color-fg, 50%);
+        background: radial-gradient(circle at bottom right 25%, rgba(darken(#6dbcb1, 35%), 0.8), rgba(#342121, 0.8));
+    }
+
+    .recruit-bg {
+        padding: 18% 15% 12%;
+        font-size: 16px;
+        border-radius: 50%;
+        color: lighten($color-fg, 50%);
+        background: rgba(0, 0 , 0, 0.6);
+    }
 
 /* Banner */
 
