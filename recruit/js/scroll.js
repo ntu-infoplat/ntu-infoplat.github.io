@@ -16,8 +16,10 @@ $(function() {
         var aniOut = 'flipOutY';
 
         conv.forEach(function(x) {
-            x.classList.add('animated');
             x.classList.add(aniOut);
+        });
+        conv.forEach(function(x) {
+            x.classList.add('animated');
         });
 
         //reference position
