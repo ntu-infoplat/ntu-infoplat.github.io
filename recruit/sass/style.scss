@@ -38,7 +38,7 @@ $pattern-background-size: 25em;
         }
     }
 
-	body, #skel-layers-wrapper {
+	body, #skel-layers-wrapper, #skel-layers-parent {
 		background: $color-bg;
         z-index: -10;
 	}
