@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("font-awesome.min.css");
 /*
 	Twenty by HTML5 UP
@@ -42,7 +43,7 @@ body.is-loading * {
 
 body, input, select, textarea {
   color: #7c8081;
-  font-family: 'Noto Sans CJK', '文泉驛微米黑', 'LiHei Pro', '微軟正黑體', 'Arial Unicode MS';
+  font-family: 'Noto Sans CJK', '文泉驛微米黑', 'LiHei Pro', '微軟正黑體', 'Arial Unicode MS', sans-serif;
   font-size: 15pt;
   font-weight: 300;
   letter-spacing: 0.025em;
@@ -257,8 +258,8 @@ input[type="email"] {
     text-decoration: none;
     top: 0;
     width: 2.25em; }
-    .icon.circle.jump:hover {
-      top: -0.5em; }
+    .icon.circle:hover {
+      top: -0.4em; }
     .icon.circle.fa-twitter {
       background: #70aecd;
       color: #fff; }

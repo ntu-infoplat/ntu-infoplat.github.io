@@ -775,6 +775,44 @@ $pattern-background-size: 25em;
 		}
 	}
 
+/* Hover Display */
+
+    .hover-display {
+        position: relative;
+        
+        .hover-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 200ms linear;
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+        }
+
+        &:hover .hover-mask {
+            opacity: 1;
+        }
+    }
+
+    .coop-bg {
+        color: lighten($color-fg, 50%);
+        background: radial-gradient(circle at bottom right 25%, rgba(darken(#6dbcb1, 35%), 0.8), rgba(#342121, 0.8));
+    }
+
+    .recruit-bg {
+        padding: 18% 15% 12%;
+        font-size: 16px;
+        border-radius: 50%;
+        color: lighten($color-fg, 50%);
+        background: rgba(0, 0 , 0, 0.6);
+    }
+
+
 /* Banner */
 
 	@-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
