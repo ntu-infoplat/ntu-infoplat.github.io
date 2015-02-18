@@ -3,6 +3,9 @@
 'use strict';
 
 $(function() {
+    if (skel.isActive('narrower') || skel.isActive('mobile'))
+        return;
+
     var setup = function() {
 
         var t = document.getElementById('bigproblem');
@@ -29,8 +32,8 @@ $(function() {
         }
         var b = [
             0,
-            -200,
-            -400,
+            -175,
+            -350,
         ]
         var progress = 0;
 
