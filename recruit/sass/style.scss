@@ -50,7 +50,7 @@ $pattern-background-size: 25em;
 
 	body, input, select, textarea {
 		color: $color-fg;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Lato', 'Noto Sans CJK', '文泉驛微米黑', 'LiHei Pro', '微軟正黑體', 'Arial Unicode MS', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -62,7 +62,7 @@ $pattern-background-size: 25em;
 		color: darken($color-one-bg, 20);
 		text-decoration: none;
 		border-bottom: dotted 1px;
-		
+
 		&:hover {
 			border-bottom-color: transparent;
 		}
@@ -78,11 +78,11 @@ $pattern-background-size: 25em;
 
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
-		font-weight: 300;	
+		font-weight: 300;
 		line-height: 1.75em;
 		margin-bottom: 1em;
 		// text-transform: uppercase;
-		
+
 		a {
 			color: inherit;
 			text-decoration: none;
@@ -105,19 +105,19 @@ $pattern-background-size: 25em;
 		position: relative;
 		top: 0.5em;
 	}
-	
+
 	sup {
 		font-size: 0.8em;
 		position: relative;
 		top: -0.5em;
 	}
-	
+
 	hr {
 		border-top: solid 1px $color-border;
 		border: 0;
 		margin-bottom: 1.5em;
 	}
-	
+
 	blockquote {
 		border-left: solid 0.5em $color-border;
 		font-style: italic;
@@ -136,13 +136,13 @@ $pattern-background-size: 25em;
 		&.major {
 			padding-bottom: 2em;
 		}
-		
+
 		&.special {
 			margin-bottom: 5em;
 			padding-top: 7em;
 			position: relative;
 			text-align: center;
-			
+
 			&:before,
 			&:after {
 				border-bottom: solid 1.5px;
@@ -154,24 +154,24 @@ $pattern-background-size: 25em;
 				top: 1.75em;
 				width: 43%;
 			}
-			
+
 			&:before {
 				left: 0;
 			}
-			
+
 			&:after {
 				right: 0;
 			}
-			
+
 			h2 {
 				margin-bottom: 0;
 			}
-			
+
 			h2 + p {
 				margin-bottom: 0;
 				padding-top: 1.5em;
 			}
-			
+
 			.icon {
 				cursor: default;
 				height: 7em;
@@ -180,7 +180,7 @@ $pattern-background-size: 25em;
 				text-align: center;
 				top: 1em;
 				width: 100%;
-				
+
 				&:before {
 					font-size: 3.5em;
 					opacity: 0.35;
@@ -188,17 +188,17 @@ $pattern-background-size: 25em;
 			}
 		}
 	}
-	
+
 	footer {
 		> :last-child {
 			margin-bottom: 0;
 		}
-		
+
 		&.major {
 			padding-top: 3em;
 		}
 	}
-	
+
 /* Form */
 
 	input[type="text"],
@@ -215,7 +215,7 @@ $pattern-background-size: 25em;
 		text-decoration: none;
 		width: 100%;
 		outline: 0;
-		
+
 		&:focus {
 			border-color: $color-one-bg;
 		}
@@ -244,12 +244,12 @@ $pattern-background-size: 25em;
 		opacity: 0.5;
 	}
 
-	:-ms-input-placeholder {  
+	:-ms-input-placeholder {
 		color: inherit;
 		opacity: 0.5;
 	}
 
-	.formerize-placeholder {  
+	.formerize-placeholder {
 		color: transparentize($color-fg, 0.5) !important;
 	}
 
@@ -258,7 +258,7 @@ $pattern-background-size: 25em;
 	.image {
 		border: 0;
 		position: relative;
-		
+
 		&:before {
 			background: url('images/overlay.png');
 			content: '';
@@ -268,7 +268,7 @@ $pattern-background-size: 25em;
 			top: 0;
 			width: 100%;
 		}
-		
+
 		&.fit {
 			display: block;
 
@@ -277,11 +277,11 @@ $pattern-background-size: 25em;
 				width: 100%;
 			}
 		}
-		
+
 		&.featured {
 			display: block;
 			margin: 0 0 2em 0;
-			
+
 			img {
 				display: block;
 				width: 100%;
@@ -308,20 +308,20 @@ $pattern-background-size: 25em;
 			text-decoration: none;
 			top: 0;
 			width: 2.25em;
-		
-			&.jump:hover {
-				top: -0.5em;
+
+			&:hover {
+				top: -0.4em;
 			}
-		
+
 			&.fa-twitter {
 				background: $color-twitter-bg;
 				color: $color-twitter-fg;
-				
+
 				&:hover {
 					background: lighten($color-twitter-bg, 4);
 				}
 			}
-		
+
 			&.fa-facebook {
 				background: $color-facebook-bg;
 				color: $color-facebook-fg;
@@ -330,7 +330,7 @@ $pattern-background-size: 25em;
 					background: lighten($color-facebook-bg, 4);
 				}
 			}
-		
+
 			&.fa-google-plus {
 				background: $color-google-plus-bg;
 				color: $color-google-plus-fg;
@@ -339,7 +339,7 @@ $pattern-background-size: 25em;
 					background: lighten($color-google-plus-bg, 4);
 				}
 			}
-		
+
 			&.fa-github {
 				background: $color-github-bg;
 				color: $color-github-fg;
@@ -348,7 +348,7 @@ $pattern-background-size: 25em;
 					background: lighten($color-github-bg, 4);
 				}
 			}
-		
+
 			&.fa-dribbble {
 				background: $color-dribbble-bg;
 				color: $color-dribbble-fg;
@@ -358,14 +358,14 @@ $pattern-background-size: 25em;
 				}
 			}
 		}
-		
+
 		&.featured {
 			cursor: default;
 			display: block;
 			margin: 0 0 1.5em 0;
 			opacity: 0.35;
 			text-align: center;
-			
+
 			&:before {
 				font-size: 5em;
 				line-height: 1em;
@@ -376,7 +376,7 @@ $pattern-background-size: 25em;
 			display: none;
 		}
 	}
-	
+
 /* List */
 
 	ol {
@@ -399,7 +399,7 @@ $pattern-background-size: 25em;
 				padding-left: 0.5em;
 			}
 		}
-		
+
 		&.icons {
 			cursor: default;
 
@@ -411,9 +411,9 @@ $pattern-background-size: 25em;
 				&:first-child {
 					padding-left: 0;
 				}
-			}		
+			}
 		}
-		
+
 		&.featured-icons {
 			cursor: default;
 			margin: -0.75em 0 0 0;
@@ -426,7 +426,7 @@ $pattern-background-size: 25em;
 				float: left;
 				text-align: center;
 				width: 50%;
-				
+
 				.icon {
 					display: inline-block;
 					font-size: 6.25em;
@@ -434,9 +434,9 @@ $pattern-background-size: 25em;
 					line-height: 1.25em;
 					width: 1em;
 				}
-			}		
+			}
 		}
-				
+
 		&.buttons {
 			cursor: default;
 
@@ -447,17 +447,17 @@ $pattern-background-size: 25em;
 			li {
 				display: inline-block;
 				padding: 0 0 0 1.5em;
-			
+
 				&:first-child {
 					padding: 0;
 				}
 			}
-			
+
 			&.vertical {
 				li {
 					display: block;
 					padding: 1.5em 0 0 0;
-			
+
 					&:first-child {
 						padding: 0;
 					}
@@ -470,39 +470,39 @@ $pattern-background-size: 25em;
 
 	table {
 		width: 100%;
-	
+
 		&.default {
 			width: 100%;
-		
+
 			tbody {
 				tr {
 					border-bottom: solid 1px $color-border;
 				}
 			}
-			
+
 			td {
 				padding: 0.5em 1em 0.5em 1em;
 			}
-			
+
 			th {
 				font-weight: 400;
 				padding: 0.5em 1em 0.5em 1em;
 				text-align: left;
 			}
-		
+
 			thead {
 				background: $color-fg;
 				color: #fff;
 			}
-			
+
 			tfoot {
 			}
-			
+
 			tbody {
 			}
 		}
 	}
-		
+
 /* Button */
 
 	input[type="button"],
@@ -530,29 +530,29 @@ $pattern-background-size: 25em;
 			background: rgba(188,202,206,0.15);
 			border-color: inherit;
 		}
-	
+
 		&.special {
 			background: $color-one-bg;
 			border-color: $color-one-bg;
 			color: $color-one-fg !important;
-			
+
 			&:hover {
 				background: lighten($color-one-bg, 5) !important;
 				border-color: lighten($color-one-bg, 5) !important;
 			}
 		}
-		
+
 		&.fit {
 			width: 100%;
 		}
-		
+
 		&.small {
 			font-size: 0.7em;
 			min-width: 14em;
 			padding: 0.5em 0;
 		}
 	}
-	
+
 /* Wrapper */
 
 	.wrapper {
@@ -562,7 +562,7 @@ $pattern-background-size: 25em;
 		&.style1 {
 			padding: 0;
 		}
-	
+
 		&.style2 {
 			background-color: $color-one-bg;
 			background-image: url('images/light-bl.svg'), url('images/light-br.svg');
@@ -580,7 +580,7 @@ $pattern-background-size: 25em;
 					background: $color-one-fg;
 					border-color: $color-one-fg;
 					color: $color-one-bg !important;
-					
+
 					&:hover {
 						border-color: inherit !important;
 						color: $color-one-fg !important;
@@ -588,12 +588,12 @@ $pattern-background-size: 25em;
 				}
 			}
 		}
-		
+
 		&.style3 {
 			background: $color-two-bg;
 			color: $color-two-fg;
 		}
-		
+
 		&.style4 {
 			background: $color-two-bg;
 			color: $color-two-fg;
@@ -623,31 +623,32 @@ $pattern-background-size: 25em;
 		z-index: 10000;
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
-		
+
 		h1 {
 			font-weight: 900;
 			margin: 0;
-			
+
 			span {
 				font-weight: 300;
 			}
 		}
-		
+
 		nav {
 			letter-spacing: 0.075em;
 			position: absolute;
 			right: 1.5em;
+			// text-transform: uppercase;
 			top: 0.75em;
-			
+
 			ul {
 				li {
 					display: inline-block;
 					margin-left: 1.5em;
-					
+
 					> ul {
 						display: none;
 					}
-					
+
 					a {
 						border: solid 1px transparent;
 						color: inherit;
@@ -656,7 +657,7 @@ $pattern-background-size: 25em;
 						padding: 0.6em 0.75em;
 						text-decoration: none;
 					}
-					
+
 					input[type="button"],
 					input[type="submit"],
 					input[type="reset"],
@@ -665,11 +666,11 @@ $pattern-background-size: 25em;
 						min-width: 0;
 						width: auto;
 					}
-					
+
 					&.submenu {
 						> a {
 							@include icon;
-							
+
 							&:before {
 								content: '\f107';
 								margin-right: 0.65em;
@@ -684,7 +685,7 @@ $pattern-background-size: 25em;
 							background: rgba(188,202,206,0.15);
 						}
 					}
-					
+
 					&.current {
 						> a {
 							font-weight: 900;
@@ -693,11 +694,11 @@ $pattern-background-size: 25em;
 				}
 			}
 		}
-		
+
 		&.reveal {
 			@include vendor-property('animation', 'reveal-header 0.5s');
 		}
-		
+
 		&.alt {
 			@include vendor-property('animation', 'none');
 			background: $color-header-alt-bg;
@@ -705,11 +706,11 @@ $pattern-background-size: 25em;
 			color: $color-header-alt-fg;
 			padding: 2em 2.5em;
 			position: absolute;
-			
+
 			nav {
 				right: 2.5em;
 				top: 1.75em;
-				
+
 				ul {
 					li {
 						&.active,
@@ -723,7 +724,7 @@ $pattern-background-size: 25em;
 			}
 		}
 	}
-	
+
 /* Dropotron */
 
 	.dropotron {
@@ -732,13 +733,14 @@ $pattern-background-size: 25em;
 		line-height: 2.25em;
 		min-width: 13em;
 		padding: 1em 0;
+		// text-transform: uppercase;
 		margin-top: calc(-1em + 1px);
 
 		&.level-0 {
 			font-size: 0.7em;
 			font-weight: 400;
 			margin-top: 1.5em;
-			
+
 			&:before {
 				border-bottom: solid 0.5em #fff;
 				border-left: solid 0.5em transparent;
@@ -749,10 +751,10 @@ $pattern-background-size: 25em;
 				top: -0.45em;
 			}
 		}
-		
+
 		> li {
 			border-top: solid 1px $color-border;
-			
+
 			> a {
 				@include vendor-property('transition', 'none');
 				color: inherit;
@@ -767,49 +769,12 @@ $pattern-background-size: 25em;
 					color: $color-one-fg;
 				}
 			}
-			
+
 			&:first-child {
 				border-top: 0;
 			}
 		}
 	}
-
-/* Hover Display */
-
-    .hover-display {
-        position: relative;
-        
-        .hover-mask {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            opacity: 0;
-            transition: opacity 200ms linear;
-            display: flex;
-            align-items: center;
-            margin: 0;
-
-        }
-
-        &:hover .hover-mask {
-            opacity: 1;
-        }
-    }
-
-    .coop-bg {
-        color: lighten($color-fg, 50%);
-        background: radial-gradient(circle at bottom right 25%, rgba(darken(#6dbcb1, 35%), 0.8), rgba(#342121, 0.8));
-    }
-
-    .recruit-bg {
-        padding: 18% 15% 12%;
-        font-size: 16px;
-        border-radius: 50%;
-        color: lighten($color-fg, 50%);
-        background: rgba(0, 0 , 0, 0.6);
-    }
 
 /* Banner */
 
@@ -830,7 +795,7 @@ $pattern-background-size: 25em;
         background-position: bottom left, bottom right, top left;
         background-repeat: no-repeat, no-repeat, repeat;
         background-size: $pattern-background-size, $pattern-background-size, auto;
-		
+
 		.inner {
 			@include vendor-property('animation', 'reveal-banner 1s 0.25s ease-in-out');
 			@include vendor-property('animation-fill-mode', 'forwards');
@@ -847,7 +812,7 @@ $pattern-background-size: 25em;
 				border-top: solid 2px;
 				margin: 0 0 2em 0;
 				padding: 3px 0 3px 0;
-				
+
 				h2 {
 					border-bottom: solid 2px;
 					border-top: solid 2px;
@@ -860,24 +825,24 @@ $pattern-background-size: 25em;
 					position: relative;
 				}
 			}
-			
+
 			p {
 				letter-spacing: 0.1em;
 				margin: 0;
-				
+
 				a {
 					color: inherit;
 					font-weight: 400;
 					text-decoration: none;
 				}
 			}
-			
+
 			footer {
 				margin: 2em 0 0 0;
 			}
 		}
 	}
-	
+
 /* Main */
 
 	#main {
@@ -887,7 +852,7 @@ $pattern-background-size: 25em;
 		background-repeat: no-repeat;
 		background-size: $pattern-background-size;
 		padding: 7em 0;
-		
+
 		> :last-child {
 			margin-bottom: 0;
 		}
@@ -897,7 +862,7 @@ $pattern-background-size: 25em;
 				border-top: solid 1px $color-border;
 				margin: 3em 0 0 0;
 				padding: 3em 0 0 0;
-				
+
 				&:first-child {
 					border-top: 0;
 					padding-top: 0;
@@ -910,7 +875,7 @@ $pattern-background-size: 25em;
 	body.index #main {
 		padding-top: 5em;
 	}
-	
+
 /* CTA */
 
 	#cta {
@@ -928,14 +893,14 @@ $pattern-background-size: 25em;
 			margin-bottom: 2em;
 		}
 	}
-	
+
 /* members */
 
 	#members {
 		background-color: $color-bg;
         padding-bottom: 5em;
 	}
-	
+
 /* Footer */
 
 	#footer {
@@ -943,21 +908,21 @@ $pattern-background-size: 25em;
 		color: $color-footer-fg;
 		padding: 5em 5em 10em 5em;
 		text-align: center;
-		
+
 		.copyright {
 			font-size: 0.8em;
 			line-height: 1em;
-			
+
 			a {
 				color: inherit;
 			}
-			
+
 			li {
 				display: inline-block;
 				margin-left: 1em;
 				padding-left: 1em;
 				border-left: dotted 1px;
-				
+
 				&:first-child {
 					margin: 0;
 					padding: 0;
@@ -966,7 +931,7 @@ $pattern-background-size: 25em;
 			}
 		}
 	}
-	
+
 /* Layer */
 
 	#topButton {
@@ -978,7 +943,7 @@ $pattern-background-size: 25em;
 			text-align: center;
 			top: 0;
 			width: 100%;
-			
+
 			&:before {
 				color: $color-navButton-fg;
 				content: '\f039';
@@ -992,7 +957,7 @@ $pattern-background-size: 25em;
 				width: 100%;
 				z-index: 1;
 			}
-			
+
 			&:after {
 				background: $color-navButton-bg;
 				border-radius: 0 0 4px 4px;
@@ -1016,7 +981,7 @@ $pattern-background-size: 25em;
 			text-align: center;
 			top: 0;
 			width: 100%;
-			
+
 			&:before {
 				color: $color-navButton-fg;
 				content: '\f039';
@@ -1030,7 +995,7 @@ $pattern-background-size: 25em;
 				width: 60px;
 				z-index: 1;
 			}
-			
+
 			&:after {
 				background: $color-navButton-bg;
 				border-radius: 2px;
@@ -1055,7 +1020,7 @@ $pattern-background-size: 25em;
 		nav {
 			padding: 0.25em 0.5em 1em 0.5em;
 		}
-		
+
 		.link {
 			border: 0;
 			border-top: solid 1px transparentize($color-navPanel-fg, 0.95);
@@ -1065,11 +1030,11 @@ $pattern-background-size: 25em;
 			line-height: 3em;
 			opacity: 0.75;
 			text-decoration: none;
-			
+
 			&.depth-0 {
 				font-weight: 900;
 			}
-			
+
 			&:first-child {
 				border-top: 0;
 			}
