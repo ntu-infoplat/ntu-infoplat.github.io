@@ -4,8 +4,7 @@
 
 $(function() {
     // element need to be changed background
-    var banner = document.querySelector("#banner");
-    var cta = document.querySelector("#cta");
+    var body = document.querySelector("body");
 
     // time step
     var tstep = 6000;
@@ -31,7 +30,7 @@ $(function() {
     var nextbg = function(element) {
         var front = element.querySelector(".site-bg.front");
         var back = element.querySelector(".site-bg.back");
-        back.style.backgroundImage = "url('css/images/light-bl.svg'), url('css/images/light-br.svg'), url('css/images/overlay.png'), url('" + images[nowIndex] + "')";
+        back.style.backgroundImage = "url('" + images[nowIndex] + "')";
         front.classList.toggle('front');
         front.classList.toggle('back');
         back.classList.toggle('back');
@@ -40,7 +39,6 @@ $(function() {
 
     setInterval(function() {
         nowIndex = (nowIndex + 1) % MAX;
-        nextbg(banner);
-        nextbg(cta);
+        nextbg(body);
     }, tstep);
 });

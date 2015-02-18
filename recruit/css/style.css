@@ -7,13 +7,20 @@
 */
 /* Basic */
 .site-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
   transition: opacity 1500ms linear;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-attachment: fixed;
+  background-image: url("../images/bg1.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0; }
   .site-bg.front {
     opacity: 1; }
@@ -252,7 +259,7 @@ input[type="email"] {
     top: 0;
     width: 2.25em; }
     .icon.circle:hover {
-      top: -0.2em; }
+      top: -0.4em; }
     .icon.circle.fa-twitter {
       background: #70aecd;
       color: #fff; }
@@ -486,7 +493,9 @@ input[type="reset"],
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10000; }
+  z-index: 10000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
   #header h1 {
     font-weight: 900;
     margin: 0; }
@@ -624,44 +633,17 @@ input[type="reset"],
     opacity: 0; }
   100% {
     opacity: 1; } }
-@-moz-keyframes change-bg {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes change-bg {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-o-keyframes change-bg {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-ms-keyframes change-bg {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes change-bg {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 #banner {
   color: #fff;
   cursor: default;
   padding: 6em 0;
   text-align: center;
-  position: relative; }
-  #banner .site-bg {
-    background-attachment: scroll, scroll, scroll, fixed;
-    background-color: #645862;
-    background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/bg1.png");
-    background-position: bottom left, bottom right, top left, top center;
-    background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-    background-size: 25em, 25em, auto, cover; }
+  position: relative;
+  background-attachment: scroll, scroll, scroll;
+  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png");
+  background-position: bottom left, bottom right, top left;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: 25em, 25em, auto; }
   #banner .inner {
     -moz-animation: reveal-banner 1s 0.25s ease-in-out;
     -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -692,6 +674,7 @@ input[type="reset"],
         font-weight: 900;
         letter-spacing: 0.2em;
         margin: 0;
+        padding: 0.5em 0;
         padding-left: 0.05em;
         position: relative; }
     #banner .inner p {
@@ -706,6 +689,7 @@ input[type="reset"],
 
 /* Main */
 #main {
+  background-color: #f3f6fa;
   background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
   background-position: top left, top right, bottom left, bottom right;
   background-repeat: no-repeat;
@@ -730,16 +714,19 @@ body.index #main {
   color: #fff;
   padding: 5em;
   text-align: center;
-  position: relative; }
-  #cta .site-bg {
-    background-attachment: scroll, scroll, scroll, fixed;
-    background-color: #645862;
-    background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/bg1.png");
-    background-position: top left, top right, top left, bottom center;
-    background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-    background-size: 25em, 25em, auto, cover; }
+  position: relative;
+  background-attachment: scroll, scroll, scroll;
+  background-image: url("images/light-bl.svg"), url("images/light-tr.svg"), url("images/overlay.png");
+  background-position: top left, top right, top left;
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: 25em, 25em, auto; }
   #cta header {
     margin-bottom: 2em; }
+
+/* members */
+#members {
+  background-color: #f3f6fa;
+  padding-bottom: 5em; }
 
 /* Footer */
 #footer {

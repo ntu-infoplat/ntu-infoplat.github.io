@@ -36,6 +36,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
   </head>
   <body class="index">
 
+    <!-- for background image transition -->
+    <div class="site-bg front"></div>
+    <div class="site-bg back"></div>
+
     <!-- Header -->
     <header id="header" class="alt">
       <h1 id="logo"><a href="#banner" class="scrolly">NTU InfoPlat <span>臺大學生資訊平台</span></a></h1>
@@ -70,10 +74,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
     <!-- Banner -->
     <section id="banner">
-
-      <!-- for background image transition -->
-      <div class="site-bg front"></div>
-      <div class="site-bg back"></div>
 
       <!--
       ".inner" is set up as an inline-block so it automatically expands
@@ -398,58 +398,53 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         </div>
       </section>
 
+      <!-- Contact Us -->
+      <header class="special container">
+        <span class="icon fa-envelope"></span>
+        <h2>Contact Us</h2>
+        <p>對於校園生活，你有什麼想法呢？<br>
+          也可透過 contact@infoplat.me 聯絡我們 ：）</p>
+      </header>
+
+      <section class="wrapper style4 special container 75%">
+
+        <!-- Form -->
+        <div class="content">
+          <form action="https://reg.infoplat.me/contact/" method="POST">
+            <div class="row 50%">
+              <div class="6u 12u(mobile)">
+                <input type="text" name="name" placeholder="姓名" />
+              </div>
+              <div class="6u 12u(mobile)">
+                <input type="text" name="email" placeholder="Email" />
+              </div>
+            </div>
+            <div class="row 50%">
+              <div class="12u">
+                <input type="text" name="subject" placeholder="主旨" />
+              </div>
+            </div>
+            <div class="row 50%">
+              <div class="12u">
+                <textarea name="message" placeholder="內文" rows="7"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="12u">
+                <ul class="buttons">
+                  <li><input type="submit" class="special" value="送出" /></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </section>
+
     </article>
-
-
-    <!-- Contact Us -->
-    <header class="special container">
-      <span class="icon fa-envelope"></span>
-      <h2>Contact Us</h2>
-      <p>對於校園生活，你有什麼想法呢？<br>
-				也可透過 contact@infoplat.me 聯絡我們 ：）</p>
-    </header>
-
-    <section class="wrapper style4 special container 75%">
-
-      <!-- Form -->
-      <div class="content">
-        <form action="https://reg.infoplat.me/contact/" method="POST">
-          <div class="row 50%">
-            <div class="6u 12u(mobile)">
-              <input type="text" name="name" placeholder="姓名" />
-            </div>
-            <div class="6u 12u(mobile)">
-              <input type="text" name="email" placeholder="Email" />
-            </div>
-          </div>
-          <div class="row 50%">
-            <div class="12u">
-              <input type="text" name="subject" placeholder="主旨" />
-            </div>
-          </div>
-          <div class="row 50%">
-            <div class="12u">
-              <textarea name="message" placeholder="內文" rows="7"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="12u">
-              <ul class="buttons">
-                <li><input type="submit" class="special" value="送出" /></li>
-              </ul>
-            </div>
-          </div>
-        </form>
-      </div>
-
-    </section>
 
     <!-- CTA -->
     <section id="cta">
-
-      <!-- for background image transition -->
-      <div class="site-bg front"></div>
-      <div class="site-bg back"></div>
 
       <header>
 				<p><h2>03/07（六）學生計算機年會 SITCON 2015</h2>
@@ -470,79 +465,81 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
     </section>
 
-		<section class="wrapper container special">
-			<h2><strong>Who We Are</strong></h2>
-			<div class="row">
-				<div class="4u 12u(narrower)">
+    <section id="members">
+      <section class="wrapper container special">
+        <h2><strong>Who We Are</strong></h2>
+        <div class="row">
+          <div class="4u 12u(narrower)">
 
-					<section>
-						<img class="icon circle" style="width: 200px; height:200px" src="./images/christine.jpg">
-						<header>
-							<h3 style="margin-bottom:0">總召 高紹芳</h3>
-						</header>
-						<p>臺灣大學 電機工程學系 二年級</p>
-					</section>
+            <section>
+              <img class="icon circle" style="width: 200px; height:200px" src="./images/christine.jpg">
+              <header>
+                <h3 style="margin-bottom:0">總召 高紹芳</h3>
+              </header>
+              <p>臺灣大學 電機工程學系 二年級</p>
+            </section>
 
-				</div>
-				<div class="4u 12u(narrower)">
+          </div>
+          <div class="4u 12u(narrower)">
 
-					<section>
-						<img class="icon circle" style="width: 200px; height:200px" src="https://graph.facebook.com/lolicon.fish/picture?height=400">
-						<header>
-							<h3 style="margin-bottom:0">資訊長 虞翔皓</h3>
-						</header>
-						<p>臺灣大學 資訊管理學系 二年級</p>
-					</section>
+            <section>
+              <img class="icon circle" style="width: 200px; height:200px" src="https://graph.facebook.com/lolicon.fish/picture?height=400">
+              <header>
+                <h3 style="margin-bottom:0">資訊長 虞翔皓</h3>
+              </header>
+              <p>臺灣大學 資訊管理學系 二年級</p>
+            </section>
 
-				</div>
-				<div class="4u 12u(narrower)">
+          </div>
+          <div class="4u 12u(narrower)">
 
-					<section>
-						<img class="icon circle" style="width: 200px; height:200px" src="http://graph.facebook.com/LeoMao321/picture?height=400">
-						<header>
-							<h3 style="margin-bottom:0">資訊長 茅耀文</h3>
-						</header>
-						<p>臺灣大學 電機工程學系 二年級</p>
-					</section>
+            <section>
+              <img class="icon circle" style="width: 200px; height:200px" src="http://graph.facebook.com/LeoMao321/picture?height=400">
+              <header>
+                <h3 style="margin-bottom:0">資訊長 茅耀文</h3>
+              </header>
+              <p>臺灣大學 電機工程學系 二年級</p>
+            </section>
 
-				</div>
-			</div>
-			<div class="row">
-				<div class="4u 12u(narrower)">
+          </div>
+        </div>
+        <div class="row">
+          <div class="4u 12u(narrower)">
 
-					<section>
-						<img class="icon circle" style="width: 200px; height:200px" src="https://graph.facebook.com/f34016037/picture?height=400">
-						<header>
-							<h3 style="margin-bottom:0">設計總監 余世暄</h3>
-						</header>
-						<p>成功大學 工業設計學系 三年級</p>
-					</section>
+            <section>
+              <img class="icon circle" style="width: 200px; height:200px" src="https://graph.facebook.com/f34016037/picture?height=400">
+              <header>
+                <h3 style="margin-bottom:0">設計總監 余世暄</h3>
+              </header>
+              <p>成功大學 工業設計學系 三年級</p>
+            </section>
 
-				</div>
-				<div class="4u 12u(narrower)">
+          </div>
+          <div class="4u 12u(narrower)">
 
-					<section>
-						<img class="icon circle" style="width: 200px; height:200px" src="https://scontent-nrt.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10806290_1023036981043521_5716687808805146024_n.jpg?oh=48dd9ec8a29f73b2a531f72a0b3a4cef&oe=554FC8DE&dl=0">
-						<header>
-							<h3 style="margin-bottom:0">設計師 蕭仿吟</h3>
-						</header>
-						<p>銘傳大學 數位媒體設計學系 三年級</p>
-					</section>
+            <section>
+              <img class="icon circle" style="width: 200px; height:200px" src="https://scontent-nrt.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10806290_1023036981043521_5716687808805146024_n.jpg?oh=48dd9ec8a29f73b2a531f72a0b3a4cef&oe=554FC8DE&dl=0">
+              <header>
+                <h3 style="margin-bottom:0">設計師 蕭仿吟</h3>
+              </header>
+              <p>銘傳大學 數位媒體設計學系 三年級</p>
+            </section>
 
-				</div>
-				<div class="4u 12u(narrower)">
+          </div>
+          <div class="4u 12u(narrower)">
 
-					<section>
-						<img class="icon circle" style="width: 200px; height:200px" src="https://graph.facebook.com/evanlee.cheng/picture?height=400">
-						<header>
-							<h3 style="margin-bottom:0">行銷顧問 李奕澄</h3>
-						</header>
-						<p>成功大學 企業管理學系 三年級</p>
-					</section>
+            <section>
+              <img class="icon circle" style="width: 200px; height:200px" src="https://graph.facebook.com/evanlee.cheng/picture?height=400">
+              <header>
+                <h3 style="margin-bottom:0">行銷顧問 李奕澄</h3>
+              </header>
+              <p>成功大學 企業管理學系 三年級</p>
+            </section>
 
-				</div>
-			</div>
-		</section>
+          </div>
+        </div>
+      </section>
+    </section>
 
     <!-- Footer -->
     <footer id="footer">
