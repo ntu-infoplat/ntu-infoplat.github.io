@@ -899,3 +899,10 @@ body.index #main {
   #sidePanel .indent-5 {
     display: inline-block;
     width: 5em; }
+
+    /* Logo, contains Squirrel */
+
+    #logo {
+      line-height: 3em;
+      font-size: 1.2em;
+    }
