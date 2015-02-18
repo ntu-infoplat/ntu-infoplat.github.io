@@ -2,12 +2,10 @@
 
 'use strict';
 
-var check;
-
 $(function() {
     var setup = function() {
 
-        t = document.getElementById('bigproblem');
+        var t = document.getElementById('bigproblem');
         var conv = [
             t.getElementById('conv1'),
             t.getElementById('conv2'),
@@ -18,22 +16,25 @@ $(function() {
         var aniOut = 'flipOutY';
 
         conv.forEach(function(x) {
-            x.classList.add('animated');
             x.classList.add(aniOut);
+        });
+        conv.forEach(function(x) {
+            x.classList.add('animated');
         });
 
         //reference position
         var getpos = function() {
-            return document.getElementById('bigproblem').getBoundingClientRect().top;
+            var rect = t.getBoundingClientRect();
+            return rect.top + rect.height - screen.height;
         }
         var b = [
-            100,
             0,
-            -100,
+            -200,
+            -400,
         ]
         var progress = 0;
 
-        check = function(index, flag) {
+        var check = function(index, flag) {
             if ((progress > index) ^ flag) {
                 if (flag) {
                     conv[index].classList.remove(aniOut);
