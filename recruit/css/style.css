@@ -1,5 +1,4 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 /*
 	Twenty by HTML5 UP
 	html5up.net | @n33co
@@ -43,7 +42,7 @@ body.is-loading * {
 
 body, input, select, textarea {
   color: #7c8081;
-  font-family: 'Lato', 'Noto Sans CJK', '文泉驛微米黑', 'LiHei Pro', '微軟正黑體', 'Arial Unicode MS';
+  font-family: 'Noto Sans CJK', '文泉驛微米黑', 'LiHei Pro', '微軟正黑體', 'Arial Unicode MS';
   font-size: 15pt;
   font-weight: 300;
   letter-spacing: 0.025em;
