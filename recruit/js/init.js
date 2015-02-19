@@ -49,7 +49,7 @@
 					animation: 'revealX',
 					width: 250,
 					height: '100%',
-					html: '<nav data-action="navList" data-args="nav"></nav>',
+					html: '<nav data-action="navList" data-args="topButton"></nav>',
 					clickToHide: true,
 					orientation: 'vertical'
 				},
