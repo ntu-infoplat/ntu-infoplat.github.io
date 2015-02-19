@@ -902,5 +902,6 @@ body.index #main {
 
 /* Logo, contains Squirrel */
 #logo {
-  line-height: 2em;
+  top-padding: 2em;
+  line-height: 3em;
   font-size: 1.2em; }
