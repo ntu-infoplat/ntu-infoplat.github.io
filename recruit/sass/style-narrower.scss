@@ -17,7 +17,7 @@
 		&.special {
 			margin-bottom: 4em;
 			padding-top: 5em;
-			
+
 			&:before,
 			&:after {
 				width: 40%;
@@ -38,7 +38,7 @@
 			margin-top: 0;
 		}
 	}
-	
+
 /* Button */
 
 	input[type="button"],
@@ -51,7 +51,7 @@
 			padding: 0.75em 0;
 		}
 	}
-	
+
 /* List */
 
 	ul {
@@ -62,12 +62,12 @@
 				display: inline-block;
 				float: none;
 				width: auto;
-				
+
 				.icon {
 					font-size: 4em;
 					width: 1.25em;
 				}
-			}		
+			}
 		}
 
 		&.buttons {
@@ -96,7 +96,7 @@
 		&.special-alt {
 			text-align: center;
 		}
-		
+
 		&.style4 {
 			padding-bottom: 3em;
 		}
@@ -110,7 +110,7 @@
 		.sidebar {
 			border-top: solid 1px transparentize($color-fg, 0.9);
 			padding-top: 3em;
-			
+
 			section {
 				border-top: 0;
 				padding-top: 0;
