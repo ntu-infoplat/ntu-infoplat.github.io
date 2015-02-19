@@ -610,7 +610,7 @@ $pattern-background-size: 25em;
 		cursor: default;
 		font-size: 0.8em;
 		left: 0;
-		padding: 1em 1.5em;
+        height: 4em;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -618,9 +618,15 @@ $pattern-background-size: 25em;
         -webkit-backface-visibility: hidden;
                 backface-visibility: hidden;
 
-		h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+		h1#logo {
 			font-weight: 900;
-			margin: 0;
+            margin: 0;
+            position: relative;
+            left: 1.5em;
 
 			span {
 				font-weight: 300;
@@ -629,64 +635,67 @@ $pattern-background-size: 25em;
 
 		nav {
 			letter-spacing: 0.075em;
-			position: absolute;
-			right: 1.5em;
+            position: absolute;
+			right: 0;
+            top: 0;
+            height: 60px;
 			// text-transform: uppercase;
-			top: 0.75em;
+            display: flex;
+            overflow: hidden;
 
-			ul {
-				li {
-					display: inline-block;
-					margin-left: 1.5em;
+            > ul {
+                display: none;
+            }
 
-					> ul {
-						display: none;
-					}
+            a {
+                border-bottom: none;
+                /* color: inherit; */
+                display: inline-block;
+                /* line-height: 1em; */
+                height: 60px;
+                width: 60px;
+                text-decoration: none;
+                position: relative;
+                top: 0;
+                transition: top 200ms ease-in-out;
 
-					a {
-						border: solid 1px transparent;
-						color: inherit;
-						display: inline-block;
-						line-height: 1em;
-						padding: 0.6em 0.75em;
-						text-decoration: none;
-					}
+                .nav-img {
+                    width: 60px;
+                }
+                .nav-text {
+                    height: 60px;
+                    width: 60px;
+                    text-align: center;
+                }
 
-					input[type="button"],
-					input[type="submit"],
-					input[type="reset"],
-					.button {
-						font-size: 1em;
-						min-width: 0;
-						width: auto;
-					}
+                &:hover {
+                    top: -60px;
+                }
 
-					&.submenu {
-						> a {
-							@include icon;
+                &.active {
+                    top: -60px;
+                }
+            }
 
-							&:before {
-								content: '\f107';
-								margin-right: 0.65em;
-							}
-						}
-					}
+            input[type="button"],
+            input[type="submit"],
+            input[type="reset"],
+            .button {
+                font-size: 1em;
+                min-width: 0;
+                width: auto;
+            }
 
-					&.active,
-					&:hover {
-						> a {
-							@include vendor-property('transition', 'all 0.2s ease-in-out');
-							background: rgba(188,202,206,0.15);
-						}
-					}
+            &.submenu {
+                > a {
+                    @include icon;
 
-					&.current {
-						> a {
-							font-weight: 900;
-						}
-					}
-				}
-			}
+                    &:before {
+                        content: '\f107';
+                        margin-right: 0.65em;
+                    }
+                }
+            }
 		}
 
 		&.reveal {
@@ -698,24 +707,7 @@ $pattern-background-size: 25em;
 			background: $color-header-alt-bg;
 			box-shadow: none;
 			color: $color-header-alt-fg;
-			padding: 2em 2.5em;
 			position: absolute;
-
-			nav {
-				right: 2.5em;
-				top: 1.75em;
-
-				ul {
-					li {
-						&.active,
-						&:hover {
-							> a {
-								border: solid 1px;
-							}
-						}
-					}
-				}
-			}
 		}
 	}
 
