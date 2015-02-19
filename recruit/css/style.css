@@ -258,8 +258,8 @@ input[type="email"] {
     text-decoration: none;
     top: 0;
     width: 2.25em; }
-    .icon.circle:hover {
-      top: -0.4em; }
+    .icon.circle.jump:hover {
+      top: -0.5em; }
     .icon.circle.fa-twitter {
       background: #70aecd;
       color: #fff; }
@@ -630,7 +630,7 @@ input[type="reset"],
   background: radial-gradient(circle at bottom right 25%, rgba(37, 81, 75, 0.8), rgba(52, 33, 33, 0.8)); }
 
 .recruit-bg {
-  padding: 18% 15% 12%;
+  padding: 16% 15% 14% !important;
   font-size: 16px;
   border-radius: 50%;
   color: #fefefe;
@@ -900,9 +900,7 @@ body.index #main {
     display: inline-block;
     width: 5em; }
 
-    /* Logo, contains Squirrel */
-
-    #logo {
-      line-height: 3em;
-      font-size: 1.2em;
-    }
+/* Logo, contains Squirrel */
+#logo {
+  line-height: 3em;
+  font-size: 1.2em; }

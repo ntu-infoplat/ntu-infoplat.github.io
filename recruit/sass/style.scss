@@ -308,8 +308,8 @@ $pattern-background-size: 25em;
 			top: 0;
 			width: 2.25em;
 
-			&:hover {
-				top: -0.4em;
+			&.jump:hover {
+				top: -0.5em;
 			}
 
 			&.fa-twitter {
@@ -806,7 +806,7 @@ $pattern-background-size: 25em;
     }
 
     .recruit-bg {
-        padding: 18% 15% 12%;
+        padding: 16% 15% 14% !important;
         font-size: 16px;
         border-radius: 50%;
         color: lighten($color-fg, 50%);
