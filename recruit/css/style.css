@@ -25,10 +25,6 @@
   .site-bg.front {
     opacity: 1; }
 
-body, #skel-layers-wrapper, #skel-layers-parent {
-  background: #f3f6fa;
-  z-index: -10; }
-
 body.is-loading * {
   -moz-animation: none !important;
   -webkit-animation: none !important;

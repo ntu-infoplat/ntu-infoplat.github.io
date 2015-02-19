@@ -37,15 +37,10 @@ $pattern-background-size: 25em;
         }
     }
 
-	body, #skel-layers-wrapper, #skel-layers-parent {
-		background: $color-bg;
-        z-index: -10;
-	}
-
-		body.is-loading * {
-			@include vendor-property('animation', 'none !important');
-			@include vendor-property('transition', 'none !important');
-		}
+    body.is-loading * {
+        @include vendor-property('animation', 'none !important');
+        @include vendor-property('transition', 'none !important');
+    }
 
 	body, input, select, textarea {
 		color: $color-fg;
